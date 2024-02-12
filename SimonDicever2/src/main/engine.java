@@ -20,7 +20,6 @@ public class engine {
 	public int puntuacion;
 	public int puntuacionFinal;
 	public int ayuda;
-	public int Modo;
 	static int MAX_COLORES_SEC = 15;
 	static int MAX_COLORES_FACIL = 4;
 	static int MAX_COLORES_DIFICIL = 7;
