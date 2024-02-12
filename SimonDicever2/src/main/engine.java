@@ -288,13 +288,13 @@ public class engine {
 				if (comprobarColor(n, colorElejido)) {
 					System.out.println("Acertaste, te quedan " + ayuda + " ayudas");
 					puntuacion = puntuacion + 2;
-				}else if((secuenciaUsuario == 'x' || secuenciaUsuario == 'X') && usarAyuda(i) == true ) {
+				}else if((secuenciaUsuario == 'x' || secuenciaUsuario == 'X') && usarAyuda(ayuda) == true ) {
 					ayuda--;
 					System.out.println("Acertaste, te quedan " + ayuda + " ayudas");
 					usarAyuda(i);
 					puntuacion = puntuacion - 6;
 				}
-				else if(!comprobarColor(n, colorElejido) || usarAyuda(i) == false) {
+				else if(!comprobarColor(n, colorElejido) || usarAyuda(ayuda) == false) {
 					System.out.println("Fallaste, fin del juego");
 					puntuacionFinal = puntuacion;
 					menu();
